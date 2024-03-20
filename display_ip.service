@@ -1,0 +1,12 @@
+[Unit]
+Description=Mostra indirizzi IP su un SSD1306 e su una API HTTP
+
+[Service]
+ExecStart=/usr/bin/python3 /media/display_ip.py
+WorkingDirectory=/media/
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
